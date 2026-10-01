@@ -259,7 +259,22 @@ figure.wide { margin-top: 28px; }
 .step-items p { max-width: 760px; }
 .step-items p + .gallery, .step-items p + figure.wide { margin-top: 24px; }
 .step-items .gallery + p { margin-top: 32px; }
-.process-cycle { max-width: 900px; margin: -24px 0 48px; }
+/* Process diagram: four steps with loops back from Testing */
+.cycle { max-width: 1000px; margin: 0 auto 64px; }
+.cycle svg { display: block; width: 100%; height: auto; }
+.cycle .cycle-tall { display: none; }
+.cycle figcaption { margin-top: 20px; text-align: center; font-size: 15px; color: var(--muted); }
+.cycle text { font-family: "Outfit", sans-serif; text-anchor: middle; }
+.cycle .cy-left { text-anchor: start; }
+.cy-node { fill: var(--bg); stroke: var(--accent); stroke-width: 2; }
+.cy-no { fill: var(--accent); font-size: 22px; font-weight: 600; }
+.cy-name { fill: var(--text); font-size: 22px; font-weight: 600; }
+.cy-desc { fill: var(--muted); font-size: 15px; font-family: "Plus Jakarta Sans", sans-serif !important; }
+.cy-fwd { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.cy-head-fwd { fill: var(--line); }
+.cy-loop { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 5 5; opacity: .8; }
+.cy-head-back { fill: var(--accent); }
+.cy-loop-label { fill: var(--accent); font-size: 15px; font-weight: 500; }
 .step-items h4 { font-family: "Outfit", sans-serif; font-size: 20px; font-weight: 600; margin-bottom: 8px; }
 
 /* Sticky step bar on the Process page */
@@ -312,6 +327,10 @@ figure.wide { margin-top: 28px; }
   .desktop-screens.two { grid-template-columns: 1fr; }
   .gallery.four, .gallery.three, .gallery.five { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .gallery.two { grid-template-columns: 1fr; }
+  .cycle { max-width: 380px; }
+  .cycle-tall .cy-desc { font-size: 14px; }
+  .cycle .cycle-wide { display: none; }
+  .cycle .cycle-tall { display: block; }
   .step-items { grid-column: 1; }
   .phone { border-width: 6px; border-radius: 28px; }
   .steps li { grid-template-columns: 1fr; gap: 12px; padding: 32px 0; }

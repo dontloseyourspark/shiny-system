@@ -67,8 +67,70 @@
   <section class="content-section">
     <div class="wrap">
       <h2 class="sub">My Iterative Design Process</h2>
-      <p class="intro-text">The iterative design process is a dynamic approach to creating and refining digital experiences (in line with Agile methodologies). It involves cyclically gathering feedback, refining designs, and testing prototypes to continuously improve the user experience. By embracing iteration, designers can uncover insights, address user needs, and refine solutions over time, ultimately delivering more effective and user-friendly products.</p>
-      <figure class="wide process-cycle"><img src="assets/process/process-cycle.png" alt="The four steps of the iterative design process: discover, ideation, design and test" loading="lazy"></figure>
+      <p class="intro-text">My process isn’t a straight line. Each step feeds the next, but what I learn along the way, especially in testing, regularly sends me back: to refine a design, rethink an idea, or learn more about the people I’m designing for. It fits naturally with Agile teams, and every loop makes the product a little more effective and user-friendly.</p>
+      <figure class="cycle">
+        <svg class="cycle-wide" viewBox="0 0 1000 390" role="img" aria-labelledby="cycle-title">
+          <title id="cycle-title">My design process: Discovery, Ideation, Design and Testing, with arrows looping back from Testing to each earlier step</title>
+          <defs>
+            <marker id="arrow-fwd" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="cy-head-fwd" d="M0 0L10 5L0 10z"/></marker>
+            <marker id="arrow-back" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="cy-head-back" d="M0 0L10 5L0 10z"/></marker>
+          </defs>
+          <path class="cy-loop" d="M869 206 A122.0 62 0 0 0 625 206" marker-end="url(#arrow-back)"/>
+          <text class="cy-loop-label" x="747.0" y="134">Refine</text>
+          <path class="cy-loop" d="M875 206 A250.0 112 0 0 0 375 206" marker-end="url(#arrow-back)"/>
+          <text class="cy-loop-label" x="625.0" y="84">Rethink</text>
+          <path class="cy-loop" d="M881 206 A378.0 162 0 0 0 125 206" marker-end="url(#arrow-back)"/>
+          <text class="cy-loop-label" x="503.0" y="34">Learn more</text>
+          <path class="cy-fwd" d="M179 260 H319" marker-end="url(#arrow-fwd)"/>
+          <path class="cy-fwd" d="M429 260 H569" marker-end="url(#arrow-fwd)"/>
+          <path class="cy-fwd" d="M679 260 H819" marker-end="url(#arrow-fwd)"/>
+          <circle class="cy-node" cx="125" cy="260" r="44"/>
+          <text class="cy-no" x="125" y="268">01</text>
+          <text class="cy-name" x="125" y="342">Discovery</text>
+          <text class="cy-desc" x="125" y="368">Understand users &amp; context</text>
+          <circle class="cy-node" cx="375" cy="260" r="44"/>
+          <text class="cy-no" x="375" y="268">02</text>
+          <text class="cy-name" x="375" y="342">Ideation</text>
+          <text class="cy-desc" x="375" y="368">Explore ideas in wireframes</text>
+          <circle class="cy-node" cx="625" cy="260" r="44"/>
+          <text class="cy-no" x="625" y="268">03</text>
+          <text class="cy-name" x="625" y="342">Design</text>
+          <text class="cy-desc" x="625" y="368">Detail screens &amp; systems</text>
+          <circle class="cy-node" cx="875" cy="260" r="44"/>
+          <text class="cy-no" x="875" y="268">04</text>
+          <text class="cy-name" x="875" y="342">Testing</text>
+          <text class="cy-desc" x="875" y="368">Validate with real users</text>
+        </svg>
+        <svg class="cycle-tall" viewBox="0 0 380 540" aria-hidden="true">
+          <defs>
+            <marker id="arrow-fwd-tall" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="cy-head-fwd" d="M0 0L10 5L0 10z"/></marker>
+            <marker id="arrow-back-tall" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="cy-head-back" d="M0 0L10 5L0 10z"/></marker>
+          </defs>
+          <path class="cy-loop" d="M70 470 A24 67.0 0 0 1 70 336" marker-end="url(#arrow-back-tall)"/>
+          <path class="cy-loop" d="M70 476 A44 140.0 0 0 1 70 196" marker-end="url(#arrow-back-tall)"/>
+          <path class="cy-loop" d="M70 482 A64 213.0 0 0 1 70 56" marker-end="url(#arrow-back-tall)"/>
+          <path class="cy-fwd" d="M112 98 V152" marker-end="url(#arrow-fwd-tall)"/>
+          <path class="cy-fwd" d="M112 238 V292" marker-end="url(#arrow-fwd-tall)"/>
+          <path class="cy-fwd" d="M112 378 V432" marker-end="url(#arrow-fwd-tall)"/>
+          <circle class="cy-node" cx="112" cy="56" r="34"/>
+          <text class="cy-no" x="112" y="63">01</text>
+          <text class="cy-name cy-left" x="164" y="54">Discovery</text>
+          <text class="cy-desc cy-left" x="164" y="78">Understand users &amp; context</text>
+          <circle class="cy-node" cx="112" cy="196" r="34"/>
+          <text class="cy-no" x="112" y="203">02</text>
+          <text class="cy-name cy-left" x="164" y="194">Ideation</text>
+          <text class="cy-desc cy-left" x="164" y="218">Explore ideas in wireframes</text>
+          <circle class="cy-node" cx="112" cy="336" r="34"/>
+          <text class="cy-no" x="112" y="343">03</text>
+          <text class="cy-name cy-left" x="164" y="334">Design</text>
+          <text class="cy-desc cy-left" x="164" y="358">Detail screens &amp; systems</text>
+          <circle class="cy-node" cx="112" cy="476" r="34"/>
+          <text class="cy-no" x="112" y="483">04</text>
+          <text class="cy-name cy-left" x="164" y="474">Testing</text>
+          <text class="cy-desc cy-left" x="164" y="498">Validate with real users</text>
+        </svg>
+        <figcaption>After testing, I loop back: to refine the design, rethink an idea, or learn more about the people I’m designing for.</figcaption>
+      </figure>
       <nav class="step-bar" aria-label="Process steps">
         <a href="#discovery"><span class="step-no">01</span><span class="step-name">Discovery</span></a>
         <a href="#ideation"><span class="step-no">02</span><span class="step-name">Ideation</span></a>
