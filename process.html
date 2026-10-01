@@ -69,23 +69,31 @@
       <h2 class="sub">My Iterative Design Process</h2>
       <p class="intro-text">The iterative design process is a dynamic approach to creating and refining digital experiences (in line with Agile methodologies). It involves cyclically gathering feedback, refining designs, and testing prototypes to continuously improve the user experience. By embracing iteration, designers can uncover insights, address user needs, and refine solutions over time, ultimately delivering more effective and user-friendly products.</p>
       <figure class="wide process-cycle"><img src="assets/process/process-cycle.png" alt="The four steps of the iterative design process: discover, ideation, design and test" loading="lazy"></figure>
+      <nav class="step-bar" aria-label="Process steps">
+        <a href="#discovery"><span class="step-no">01</span><span class="step-name">Discovery</span></a>
+        <a href="#ideation"><span class="step-no">02</span><span class="step-name">Ideation</span></a>
+        <a href="#design"><span class="step-no">03</span><span class="step-name">Design</span></a>
+        <a href="#testing"><span class="step-no">04</span><span class="step-name">Testing</span></a>
+      </nav>
       <ol class="steps">
-        <li>
+        <li id="discovery">
           <span class="step-num">01</span>
           <h3>Discovery</h3>
           <div class="step-items">
+            <p class="step-intro">Before I do any design work, I need to understand the current position of the brand, its website and app, and who I’m designing for. I can’t jump in until I have a picture of where the company stands in relation to its competitors, its users, and their pain points and known issues. These are some of the tools I use to build that picture.</p>
             <div>
               <h4>User Interviews</h4>
-              <p>I conducted user interviews to inform the design of a new note-taking application. I prepared an interview script with open-ended questions, focusing on my target audiences’ current note-taking process, pain points and frustrations with that process and features they would like in a new app. I recruited and interviewed some users remotely and some in person and then analysed my findings.</p>
+              <p>For a hypothetical note-taking app, I conducted user interviews to inform its design. I prepared an interview script with open-ended questions, focusing on my target audiences’ current note-taking process, pain points and frustrations with that process and features they would like in a new app. I recruited and interviewed some users remotely and some in person and then analysed my findings.</p>
+              <p>I had hypothesised that users would want a better note-taking experience. Instead, every participant (100%) still preferred pen and paper to digital note-taking, so my conclusion was that they might not need a fancy note-taking app at all: their pen and paper is usually enough.</p>
               <figure class="wide"><img src="assets/process/interviews-1.png" alt="Six quotes from interviewees about how they take notes" loading="lazy"><figcaption>User insights from the interviews</figcaption></figure>
               <div class="gallery two">
                 <figure><img src="assets/process/interviews-2.png" alt="Score snapshot summarising key research findings" loading="lazy"><figcaption>Interesting findings from my research</figcaption></figure>
-                <figure><img src="assets/process/interviews-3.png" alt="Product assumption, hypothesis and conclusion from the research" loading="lazy"><figcaption>Some of my conclusions from my research</figcaption></figure>
               </div>
             </div>
             <div>
               <h4>Personas</h4>
               <p>These personas were developed for a UK-based organisation that caters to accountants in the public sector, accounting firms, and professional bodies responsible for managing public funds, utilising custom questionnaires for statistical data collection. We wanted to form a deeper understanding of our users' goals, needs, experiences, and behaviours. So, we created 2 personas, one for each of our user segments.</p>
+              <p>Personas help me design for real people rather than a generic ‘user’. I put myself in each persona’s shoes and think about how they would use the app.</p>
               <div class="gallery two">
                 <figure><img src="assets/process/persona-1.png" alt="Persona of Yogesh Singh with biography, goals, pain points and skills" loading="lazy"></figure>
                 <figure><img src="assets/process/persona-2.png" alt="Persona of Tracey White with biography, goals, pain points and skills" loading="lazy"></figure>
@@ -93,14 +101,12 @@
             </div>
             <div>
               <h4>Competitor Analysis</h4>
-              <p>According to UX Design CC, a competitor analysis can be defined as</p>
-              <blockquote>“Identifying your competitors and evaluating their strategies to determine their strengths and weaknesses relative to those of your own product or service.”</blockquote>
-              <p>I did this competitive analysis for a South African online platform to promote and support a movement of active citizens to fix local challenges while holding authorities to account.</p>
+              <p>Competitor analysis is another tool I use before I start on wireframes or design anything. I did this competitive analysis for a South African online platform to promote and support a movement of active citizens to fix local challenges while holding authorities to account.</p>
               <figure class="wide"><img src="assets/process/competitor-analysis.png" alt="Competitor analysis matrix comparing platforms across several criteria" loading="lazy"></figure>
             </div>
           </div>
         </li>
-        <li>
+        <li id="ideation">
           <span class="step-num">02</span>
           <h3>Ideation</h3>
           <div class="step-items">
@@ -123,7 +129,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li id="design">
           <span class="step-num">03</span>
           <h3>Design</h3>
           <div class="step-items">
@@ -143,7 +149,7 @@
             </div>
           </div>  
         </li>
-        <li>
+        <li id="testing">
           <span class="step-num">04</span>
           <h3>Testing</h3>
           <div class="step-items">
@@ -202,5 +208,6 @@
 </footer>
 
 <script src="menu.js" defer></script>
+<script src="steps.js" defer></script>
 </body>
 </html>
