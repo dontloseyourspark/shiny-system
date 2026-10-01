@@ -32,16 +32,28 @@
 <header>
   <div class="wrap">
     <a class="logo" href="../index.html" aria-label="Harris Pinkham, home"><img src="../assets/logo.png" alt="harris pinkham" width="497" height="206"></a>
-    <nav aria-label="Main">
+    <nav class="site-nav" aria-label="Main">
       <a href="../index.html#work" aria-current="page">Projects</a>
       <a href="../process.html">Process</a>
       <a href="../ai.html">AI</a>
       <a href="../index.html#about">About</a>
-      <a href="#contact">Contact</a>
     </nav>
     <a class="btn" href="#contact">CONTACT ↗</a>
+    <button class="menu-btn" type="button" popovertarget="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<div id="menu" class="drawer" popover>
+  <div class="drawer-handle" aria-hidden="true"></div>
+  <button class="drawer-close" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Close menu">✕</button>
+  <nav class="drawer-nav" aria-label="Menu">
+        <a href="../index.html#work" aria-current="page">Projects</a>
+        <a href="../process.html">Process</a>
+        <a href="../ai.html">AI</a>
+        <a href="../index.html#about">About</a>
+  </nav>
+  <a class="btn" href="#contact">CONTACT ↗</a>
+</div>
 
 <main>
   <section class="page-hero">
@@ -117,5 +129,6 @@
   </div>
 </footer>
 
+<script src="../menu.js" defer></script>
 </body>
 </html>
