@@ -254,11 +254,23 @@ figure.wide { margin-top: 28px; }
 .steps h3 { font-size: clamp(26px, 3vw, 36px); font-weight: 600; }
 .steps p { color: var(--muted); font-size: 17px; }
 .steps p + p { margin-top: 12px; }
-.step-items > div + div { margin-top: 64px; }
+/* Each tool is an accordion: click the title to show its details */
+.tool { border-top: 1px solid var(--line); }
+.tool:last-child { border-bottom: 1px solid var(--line); }
+.tool summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; cursor: pointer; list-style: none; }
+.tool summary::-webkit-details-marker { display: none; }
+.tool summary::after { content: "+"; flex: none; font-family: "Outfit", sans-serif; font-size: 28px; line-height: 1; color: var(--accent); }
+.tool[open] summary::after { content: "–"; }
+.tool summary:hover h4 { color: var(--accent); }
+.tool[open] { padding-bottom: 40px; }
 .step-items .step-intro { max-width: 760px; margin-bottom: 48px; color: var(--text); font-size: 19px; }
+/* line that introduces a step's list of tools */
+.step-items .step-intro:has(+ .tools-label) { margin-bottom: 20px; }
+.step-items .tools-label { margin-bottom: 28px; }
 .step-items p { max-width: 760px; }
 .step-items p + .gallery, .step-items p + figure.wide { margin-top: 24px; }
 .step-items .gallery + p { margin-top: 32px; }
+.step-items p + p { margin-top: 12px; }
 /* Process diagram: four steps with loops back from Testing */
 .cycle { max-width: 1000px; margin: 0 auto 64px; }
 .cycle svg { display: block; width: 100%; height: auto; }
@@ -275,7 +287,7 @@ figure.wide { margin-top: 28px; }
 .cy-loop { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 5 5; opacity: .8; }
 .cy-head-back { fill: var(--accent); }
 .cy-loop-label { fill: var(--accent); font-size: 15px; font-weight: 500; }
-.step-items h4 { font-family: "Outfit", sans-serif; font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.step-items h4 { font-family: "Outfit", sans-serif; font-size: 22px; font-weight: 600; margin: 0; transition: color .2s; }
 
 /* Sticky step bar on the Process page */
 .step-bar {
