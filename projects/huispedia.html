@@ -72,9 +72,8 @@
   <section class="wrap project-info">
     <div>
       <h2 class="sub">Overview</h2>
-      <p>Huispedia is a fast-growing Dutch real estate platform, and I tackle the challenge of making complex housing journeys feel intuitive and actionable. By combining user insights with iterative design and testing, I deliver solutions that improve both user experience and business outcomes.</p>
-      <p>I’m a Senior Product Designer at Huispedia, where I’ve worked since December 2025 alongside developers, data scientists and the CTO.</p>
-      <p>I work with the data scientists to turn the output of their data and algorithms into something users can read at a glance. Examples are the Huispedia woningwaarde (home value), the “Ruim geschatte waarde” (estimated value range) and the bidding advice.</p>
+      <p>At Huispedia, I design tools that turn complex housing data into decisions people can actually make — from understanding what their home is worth to deciding how much to bid on their next one.</p>
+      <p>As Senior Product Designer, I work closely with developers, data scientists and the CTO. The data team builds the models behind things like home valuations, estimated value ranges and bidding advice; my job is to turn those outputs into experiences people can understand and act on.</p>
     </div>
     <dl class="meta">
       <div><dt>Category</dt><dd>Real Estate</dd></div>
@@ -86,59 +85,93 @@
     </dl>
   </section>
 
-  <section class="wrap decisions">
-    <h2 class="sub">Key decisions</h2>
-    <article class="decision">
-      <div>
-        <h3>Making the bidding advice obvious</h3>
+  <!-- Case study: four design stories. Images live in projects/huispedia/;
+       files named in the "to supply" list are added by Harris. -->
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">01</span>
+      <h2>Making bidding advice impossible to miss</h2>
+    </header>
+    <div class="story-split">
+      <div class="story-text">
         <h4>The problem</h4>
-        <p>The banner that tells house hunters whether to expect overbidding was too vague and grey.</p>
+        <p>A property page holds many competing pieces of information: photos, specifications, the energy label, pricing and neighbourhood data. Bidding advice is one of the most decision-critical of them, but the previous grey banner was vague and didn’t give it enough visual priority.</p>
         <h4>What made it hard</h4>
-        <p>There are many things on this screen, so the hard part was the information architecture: choosing which part of the screen needs to grab your attention first. Users generally come to Huispedia to see how much they should bid on a house, so I wanted to make the overbidding or underbidding situation obvious.</p>
+        <p>The challenge was information architecture: giving the advice priority on a dense page without crowding out everything else people need to see.</p>
         <h4>What I chose, and why</h4>
-        <p>I treated it as a hierarchy problem first: the bidding advice is what people come for, so it had to be the first thing the eye lands on. From there, their eye can travel through the rest of the screen at their leisure.</p>
-        <p>To make that happen, the banner became green so it stands out from the rest of the page, and the advice is colour-coded: orange for overbidding and light green for underbidding. Users can tell at a glance whether they should overbid, underbid or pay exactly what the house is worth.</p>
-        <p>Clicking the banner opens the Huispedia Plus modal, so the advice also leads people towards a subscription.</p>
+        <p>I strengthened its hierarchy through placement, colour and a dedicated treatment: a prominent green banner directly below the asking price, with the advice colour-coded orange for overbidding and light green for underbidding. Clicking the banner opens the Huispedia Plus modal.</p>
         <h4>The result</h4>
         <p>I A/B tested the new banner, and users found the bidding advice much easier to find.</p>
       </div>
-      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/huispedia-14.png" alt="Property listing page with photo gallery, asking price and expected overbid" loading="lazy"></figure>
-    </article>
-    <article class="decision">
-      <div>
-        <h3>My Home: telling the story of your home’s value</h3>
-        <p>I designed the new My Home screen together with another designer.</p>
-        <h4>The problem</h4>
-        <p>When homeowners view their own house on Huispedia, we wanted to show the important things they want to see: what their house is worth, how it compares to other houses in the neighbourhood, and how its value has changed compared to how the market is doing.</p>
-        <h4>What made it hard</h4>
-        <p>We didn’t want to show everything to people without a subscription. So how do you still offer value while encouraging people to subscribe to Huispedia Plus? Locking everything behind a paywall risked people leaving the page, and it would have hurt how the pages are found through search.</p>
-        <h4>What we chose, and why</h4>
-        <p>Together with the CTO, we decided to always show homeowners the value of their own home for free. To see insights into what is going on around them, they need a subscription.</p>
-        <p>The locked insights are a deliberate teaser: non-subscribers see a lock and blurred figures, so they can see what they’re missing.</p>
-        <p>We wanted to tell a story. It starts with the details of your house, which are always visible on the left, and shows the neighbourhood too, all above the fold. From there it can move on to what is happening further out.</p>
-      </div>
-      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/huispedia-12.png" alt="Home valuation page with value range, neighbourhood stats and recent sales" loading="lazy"></figure>
-    </article>
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/huispedia-14.png" alt="Property listing page with a prominent green banner showing the expected overbid below the asking price" loading="lazy"></figure>
+    </div>
   </section>
 
-  <section class="wrap screens">
-      <!-- To add a screen: save the image in projects/huispedia/ and replace one
-           <div class="slot">…</div> with
-           <img src="huispedia/your-file.png" alt="What the screen shows" loading="lazy">
-           Copy a <figure> to add more frames, or delete the ones you don't need. -->
-      <h2 class="sub">Desktop</h2>
-      <div class="desktop-screens">
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/huispedia-13.png" alt="Huispedia Plus rating popup over the valuation page" loading="lazy"></figure>
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">02</span>
+      <h2>Designing value before the paywall</h2>
+    </header>
+    <div class="story-split story-hero">
+      <div class="story-text sticky">
+        <p class="story-credit">My Home redesign, designed together with another designer.</p>
+        <h4>The problem</h4>
+        <p>When homeowners view their own house, they want to know what it’s worth, how it compares to other houses in the neighbourhood, and how its value has changed compared to the market.</p>
+        <h4>What made it hard</h4>
+        <p>Huispedia needs to give homeowners enough free value to find My Home useful, while preserving meaningful reasons to subscribe to Huispedia Plus. Locking everything behind a paywall risked people leaving the page, and would have hurt how the pages are found through search.</p>
+        <h4>What we chose, and why</h4>
+        <p>Together with the CTO, we decided that homeowners can always see the value of their own home for free, while deeper insights into the surrounding market require Huispedia Plus. The locked insights are a deliberate teaser: a lock and blurred figures show what’s available.</p>
+        <p>This creates a progression from “What is my home worth?” to “What is happening around me?”. The details of your home stay visible on the left, the neighbourhood sits above the fold, and the map lets people explore further out.</p>
       </div>
-      <h2 class="sub">Mobile</h2>
-      <div class="mobile-screens">
-        <figure class="phone"><img src="huispedia/huispedia-02.png" alt="Jouw Huispedia home with budget, viewings and daily suggestions" loading="lazy"></figure>
-        <figure class="phone"><img src="huispedia/huispedia-09.png" alt="Koop assistent suggesting a home within budget" loading="lazy"></figure>
-        <figure class="phone"><img src="huispedia/huispedia-10.png" alt="AI assistant offering homes outside the usual preferences" loading="lazy"></figure>
-        <figure class="phone"><img src="huispedia/huispedia-03.png" alt="Upcoming and past viewings with feedback" loading="lazy"></figure>
-        <figure class="phone"><img src="huispedia/huispedia-11.png" alt="Valuation Lab form to estimate a home’s value" loading="lazy"></figure>
-        <figure class="phone"><img src="huispedia/huispedia-06.jpg" alt="Question asking whether the budget was agreed with a mortgage advisor" loading="lazy"></figure>
-      </div>
+      <figure class="mobile-long"><img src="huispedia/my-home-final.png" alt="The redesigned My Home page on mobile, from the home’s value down to the surrounding neighbourhood" loading="lazy"></figure>
+    </div>
+    <div class="story-media">
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/my-home-desktop.png" alt="The redesigned My Home page on desktop, with the home’s value and the neighbourhood above the fold" loading="lazy"><figcaption>My Home on desktop: your home on the left, its value and the neighbourhood above the fold.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">03</span>
+      <h2>Turning a house price into a monthly reality</h2>
+    </header>
+    <div class="story-text">
+      <h4>The problem</h4>
+      <p>A purchase price doesn’t tell buyers what a home will actually cost them each month. Mortgage payments are only one part of the picture; taxes, utilities, insurance, internet and VvE contributions all affect affordability.</p>
+      <h4>What made it hard</h4>
+      <p>Some costs can be estimated from property data, while others depend on the buyer’s household, mortgage and personal situation. Asking users to configure everything upfront would make the feature accurate but cumbersome.</p>
+      <h4>What I chose, and why</h4>
+      <p>I designed the monthly-cost estimate as a useful default first, with each category independently adjustable. Users can progressively personalise the calculation without having to complete a long setup flow before seeing any value.</p>
+    </div>
+    <div class="story-media phones">
+      <figure><img src="huispedia/monthly-cost.png" alt="Monthly cost estimate of €2,949, broken down into mortgage, taxes, utilities, insurance, internet and VvE" loading="lazy"><figcaption>The estimate: a useful default, broken down by category</figcaption></figure>
+      <figure><img src="huispedia/monthly-cost-mortgage.png" alt="Sheet for adjusting the mortgage part of the monthly cost" loading="lazy"><figcaption>Adjusting the mortgage</figcaption></figure>
+      <figure><img src="huispedia/monthly-cost-utilities.png" alt="Sheet for adjusting gas, water and electricity costs" loading="lazy"><figcaption>Adjusting gas, water and electricity</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">04</span>
+      <h2>Making housing data conversational</h2>
+    </header>
+    <div class="story-text">
+      <p>I explored how Huispedia’s existing property and market data could become conversational. Rather than starting users with an empty chat box, I designed contextual prompts around common housing questions and kept structured routes into bidding advice and other Plus features.</p>
+    </div>
+    <div class="story-media phones">
+      <figure><img src="huispedia/assistant-1-prompts.png" alt="The assistant opening with contextual prompts about the property" loading="lazy"></figure>
+      <figure><img src="huispedia/assistant-2-answer.png" alt="The assistant answering a question about the property" loading="lazy"></figure>
+      <figure><img src="huispedia/assistant-3-follow-ups.png" alt="Related follow-up suggestions after an answer" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="wrap story other-work">
+    <h2 class="sub">Other work at Huispedia</h2>
+    <div class="gallery three">
+      <figure><img src="huispedia/selling-strategy.png" alt="Comparing different approaches to selling a home" loading="lazy"><figcaption>Selling strategy: helping homeowners compare different approaches to selling.</figcaption></figure>
+      <figure><img src="huispedia/huispedia-11.png" alt="Valuation Lab form for adjusting property characteristics" loading="lazy"><figcaption>Valuation Lab: letting homeowners explore how property characteristics affect estimated value.</figcaption></figure>
+      <figure><img src="huispedia/viewing-flow.png" alt="Guided mobile flow for requesting a viewing" loading="lazy"><figcaption>Viewing flow: turning a multi-step viewing request into a guided mobile flow.</figcaption></figure>
+    </div>
   </section>
 
   <nav class="wrap project-nav" aria-label="More projects">

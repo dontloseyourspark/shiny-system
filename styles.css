@@ -235,13 +235,29 @@ figure.wide { margin-top: 28px; }
 .project-nav span { font-family: "Outfit", sans-serif; font-size: 20px; font-weight: 600; }
 .project-nav a:hover span { color: var(--accent); }
 
-/* Key decisions on a project page */
-.decisions { padding-bottom: 80px; }
-.decision { display: grid; grid-template-columns: 1fr 1.25fr; gap: 56px; align-items: start; }
-.decision + .decision { margin-top: 80px; }
-.decision h3 { font-size: clamp(24px, 2.6vw, 32px); font-weight: 600; margin-bottom: 8px; }
-.decision h4 { margin-top: 24px; font-size: 14px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
-.decision p { margin-top: 8px; color: var(--muted); font-size: 17px; }
+/* Project case-study stories (Huispedia) */
+.story { padding-top: 72px; padding-bottom: 72px; border-top: 1px solid #1c1c1c; }
+.story-head { margin-bottom: 36px; }
+.story-no { display: block; margin-bottom: 8px; font-family: "Outfit", sans-serif; font-size: 18px; font-weight: 600; color: var(--accent); }
+.story-head h2 { font-size: clamp(30px, 3.6vw, 44px); font-weight: 600; }
+.story-split { display: grid; grid-template-columns: 1fr 1.25fr; gap: 56px; align-items: start; }
+.story-text { max-width: 760px; }
+.story-text.sticky { position: sticky; top: 104px; }
+.story-hero { grid-template-columns: 1fr 380px; }
+.mobile-long { margin: 0; }
+.mobile-long img { width: 100%; height: auto; border-radius: 16px; border: 1px solid #262626; }
+.story-text h4 { margin-top: 24px; font-size: 14px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.story-text h4:first-child { margin-top: 0; }
+.story-text p { margin-top: 8px; color: var(--muted); font-size: 17px; }
+.story-text .story-credit { margin: 0 0 8px; color: var(--text); font-size: 15px; }
+.story-media { display: grid; gap: 24px; margin-top: 40px; align-items: start; }
+.story-media.two { grid-template-columns: 1fr 1fr; }
+.story-media.phones { grid-template-columns: repeat(3, 1fr); max-width: 960px; gap: 32px; }
+.story-media figure { margin: 0; }
+.story-media figure:not(.browser):not(.phone) img { width: 100%; height: auto; border-radius: 10px; border: 1px solid #262626; }
+.story figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.story .browser figcaption { margin: 0; padding: 10px 16px; border-top: 1px solid #262626; }
+.other-work .gallery { margin-top: 0; }
 
 /* Case study pages */
 .case-study { padding-bottom: 80px; }
@@ -349,7 +365,12 @@ figure.wide { margin-top: 28px; }
   .project-info { grid-template-columns: 1fr; gap: 40px; padding-top: 56px; padding-bottom: 56px; }
   .mobile-screens, .mobile-screens.four { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .desktop-screens.two { grid-template-columns: 1fr; }
-  .decision { grid-template-columns: 1fr; gap: 32px; }
+  .story { padding-top: 56px; padding-bottom: 56px; }
+  .story-split, .story-media.two { grid-template-columns: 1fr; gap: 32px; }
+  .story-text.sticky { position: static; }
+  .story-media.phones { grid-template-columns: 1fr; max-width: 300px; margin-left: auto; margin-right: auto; gap: 24px; }
+  .story-hero { grid-template-columns: 1fr; }
+  .mobile-long { max-width: 300px; margin: 0 auto; }
   .gallery.four, .gallery.three, .gallery.five { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .gallery.two { grid-template-columns: 1fr; }
   .cycle { max-width: 380px; }
