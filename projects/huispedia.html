@@ -74,7 +74,7 @@
       <h2 class="sub">Overview</h2>
       <p>Huispedia is a fast-growing Dutch real estate platform, and I tackle the challenge of making complex housing journeys feel intuitive and actionable. By combining user insights with iterative design and testing, I deliver solutions that improve both user experience and business outcomes.</p>
       <p>I’m a Senior Product Designer at Huispedia, where I’ve worked since December 2025 alongside developers, data scientists and the CTO.</p>
-      <p>The data scientists work with the data and algorithms, and I figure out how to present the results to users. Examples are the Huispedia woningwaarde (home value), the “Ruim geschatte waarde” (estimated value range) and the bidding advice.</p>
+      <p>I work with the data scientists to turn the output of their data and algorithms into something users can read at a glance. Examples are the Huispedia woningwaarde (home value), the “Ruim geschatte waarde” (estimated value range) and the bidding advice.</p>
     </div>
     <dl class="meta">
       <div><dt>Category</dt><dd>Real Estate</dd></div>
@@ -96,8 +96,11 @@
         <h4>What made it hard</h4>
         <p>There are many things on this screen, so the hard part was the information architecture: choosing which part of the screen needs to grab your attention first. Users generally come to Huispedia to see how much they should bid on a house, so I wanted to make the overbidding or underbidding situation obvious.</p>
         <h4>What I chose, and why</h4>
-        <p>I made the banner green and colour-coded the advice: orange for overbidding and light green for underbidding. Users can immediately tell whether they should overbid, underbid or pay exactly what the house is worth.</p>
-        <p>The green banner grabs the user’s attention first, and their eye can then travel through the rest of the screen at their leisure. They see what they came to the page to see, quickly and easily.</p>
+        <p>I treated it as a hierarchy problem first: the bidding advice is what people come for, so it had to be the first thing the eye lands on. From there, their eye can travel through the rest of the screen at their leisure.</p>
+        <p>To make that happen, the banner became green so it stands out from the rest of the page, and the advice is colour-coded: orange for overbidding and light green for underbidding. Users can tell at a glance whether they should overbid, underbid or pay exactly what the house is worth.</p>
+        <p>Clicking the banner opens the Huispedia Plus modal, so the advice also leads people towards a subscription.</p>
+        <h4>The result</h4>
+        <p>I A/B tested the new banner, and users found the bidding advice much easier to find.</p>
       </div>
       <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/huispedia-14.png" alt="Property listing page with photo gallery, asking price and expected overbid" loading="lazy"></figure>
     </article>
@@ -111,6 +114,7 @@
         <p>We didn’t want to show everything to people without a subscription. So how do you still offer value while encouraging people to subscribe to Huispedia Plus? Locking everything behind a paywall risked people leaving the page, and it would have hurt how the pages are found through search.</p>
         <h4>What we chose, and why</h4>
         <p>Together with the CTO, we decided to always show homeowners the value of their own home for free. To see insights into what is going on around them, they need a subscription.</p>
+        <p>The locked insights are a deliberate teaser: non-subscribers see a lock and blurred figures, so they can see what they’re missing.</p>
         <p>We wanted to tell a story. It starts with the details of your house, which are always visible on the left, and shows the neighbourhood too, all above the fold. From there it can move on to what is happening further out.</p>
       </div>
       <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="huispedia/huispedia-12.png" alt="Home valuation page with value range, neighbourhood stats and recent sales" loading="lazy"></figure>
@@ -148,9 +152,8 @@
       <a class="email" href="mailto:harrispinkham@gmail.com">harrispinkham@gmail.com</a>
       <div class="socials">
         <a href="https://www.linkedin.com/in/harrispinkham/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.64-1.61-2.64-1.61 0-1.86 1.26-1.86 2.56v4.92h-4z"/></svg></a>
-        <a href="https://www.instagram.com/indiaskapie" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.1 0-4.1.06C4.6 2.2 2.2 4.6 2.06 7.9 2 8.9 2 9.3 2 12s0 3.1.06 4.1c.15 3.3 2.55 5.7 5.84 5.84C8.9 22 9.3 22 12 22s3.1 0 4.1-.06c3.3-.15 5.7-2.55 5.84-5.84.06-1 .06-1.4.06-4.1s0-3.1-.06-4.1C21.8 4.6 19.4 2.2 16.1 2.06 15.1 2 14.7 2 12 2zm0 1.8c2.67 0 3 0 4.03.06 2.4.1 3.97 1.7 4.1 4.1.05 1.05.06 1.36.06 4.04s0 3-.06 4.04c-.12 2.4-1.7 3.97-4.1 4.1-1.04.05-1.36.06-4.03.06s-3 0-4.04-.06c-2.4-.12-3.97-1.7-4.1-4.1C3.8 15 3.8 14.67 3.8 12s0-3 .06-4.04c.12-2.4 1.7-3.97 4.1-4.1C9 3.8 9.33 3.8 12 3.8z"/></svg></a>
-        <a class="social-text" href="https://stock.adobe.com/nl/contributor/207331564/Harris%20Pinkham" aria-label="Adobe Stock portfolio">St</a>
       </div>
+      <p class="photo-links">My photography: <a href="https://stock.adobe.com/nl/contributor/207331564/Harris%20Pinkham">Adobe Stock</a> · <a href="https://www.instagram.com/indiaskapie">Instagram</a></p>
     </div>
   </section>
 </main>

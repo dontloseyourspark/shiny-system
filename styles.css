@@ -164,7 +164,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--text); }
 .socials a { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; }
 .socials a:hover { border-color: var(--accent); }
 .socials svg { width: 18px; height: 18px; fill: currentColor; }
-.socials .social-text { font-family: "Outfit", sans-serif; font-size: 16px; font-weight: 600; text-decoration: none; }
+.photo-links { margin-top: 20px; font-size: 15px; color: var(--muted); }
+.photo-links a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line); }
+.photo-links a:hover { border-color: var(--accent); }
 footer { border-top: 1px solid #1c1c1c; padding: 24px 0; font-size: 14px; color: var(--muted); }
 footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 footer img { height: 32px; width: auto; }
