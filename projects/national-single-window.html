@@ -61,48 +61,128 @@
       <a class="back" href="../index.html#work">← All projects</a>
       <p class="tag">Government</p>
       <h1>Lesotho National Single Window</h1>
-      <p class="lead">Border Control Modernisation</p>
+      <p class="lead">Designing a single front door for complex government trade services</p>
     </div>
   </section>
 
   <div class="wrap">
-    <img class="cover" src="../assets/single-window.jpg" alt="Lesotho National Single Window portal on a laptop" width="2048" height="1149">
+    <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Welcome%20Screen.png" alt="The public LNSW landing page, with options to register or log in, a notice dashboard and helpdesk details" loading="lazy"></figure>
   </div>
 
   <section class="wrap project-info">
     <div>
       <h2 class="sub">Overview</h2>
-      <p>We were involved in the process of modernising the Kingdom of Lesotho's border control system, and had the opportunity to create detailed mockups for their system. The primary emphasis was placed on the desktop designs, with a specific attention to responsiveness also being taken into account.</p>
+      <p>The Lesotho National Single Window brought trade processes that had previously been handled through paper forms, email and separate government systems into one digital platform.</p>
+      <p>As Lead UX Designer, I worked with a junior designer, business analysts, developers and an experienced team lead to translate complex government processes into usable digital workflows. Our primary users were traders and brokers, who needed to act for themselves or organisations, manage multiple applications, submit documentation and follow processes that could pass between them and government officials several times before completion.</p>
+      <p class="lnsw-note">Direct access to end users was limited during the initial design phase, so I worked closely with experienced business analysts and team leads who translated stakeholder requirements and existing government processes into detailed specifications. Later testing exposed places where implemented workflows had become unnecessarily complicated, giving me opportunities to simplify and redesign them.</p>
     </div>
     <dl class="meta">
-      <div><dt>Category</dt><dd>Government</dd></div>
-      <div><dt>Platform</dt><dd>Web</dd></div>
+      <div><dt>Role</dt><dd>Lead UX Designer</dd></div>
+      <div><dt>Team</dt><dd>UX, Business Analysis &amp; Engineering</dd></div>
+      <div><dt>Users</dt><dd>Traders, Brokers &amp; Government Officials</dd></div>
+      <div><dt>Product</dt><dd>National trade / case-management platform</dd></div>
       <div><dt>Company</dt><dd>BBD</dd></div>
       <div><dt>Website</dt><dd><a class="site-link" href="https://www.lnsw.gov.ls/" target="_blank" rel="noopener">www.lnsw.gov.ls ↗</a></dd></div>
     </dl>
   </section>
 
-  <section class="wrap screens">
-      <!-- To add a screen: save the image in projects/lnsw/ and replace one
-           <div class="slot">…</div> with
-           <img src="lnsw/your-file.png" alt="What the screen shows" loading="lazy">
-           Copy a <figure> to add more frames, or delete the ones you don't need. -->
-      <h2 class="sub">Desktop</h2>
-      <div class="desktop-screens two">
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Welcome%20Screen.png" alt="Welcome page with notice dashboard and helpdesk details" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Login%20screen%20with%20errors.png" alt="Login form showing validation errors" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Trader%20Profile%20Registration%20-%201.png" alt="Choosing to register as a trader, broker or information consumer" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Trader%20Profile%20Registration%20-%2013.png" alt="Entering a Taxpayer Identification Number during registration" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Desktop%20-%204.png" alt="Process creator step 2: selecting a commodity by HS code" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Desktop%20-%206.png" alt="Process creator step 4: selecting a form" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Desktop%20-%207.png" alt="Process creator step 5: selecting supporting documents" loading="lazy"></figure>
-        <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/GAO%20Approve%20Registration%20-%206.png" alt="Government agency officer approving a registration" loading="lazy"></figure>
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">01</span>
+      <h2>Adapting an enterprise framework without exposing its complexity</h2>
+    </header>
+    <div class="story-text">
+      <h4>The problem</h4>
+      <p>LNSW was built on Vanguard, an existing case-management platform with a defined multi-pane architecture. Global navigation, work queues, the current task and contextual case controls could all exist simultaneously.</p>
+      <p>That model worked for experienced case workers, but showing the entire system to traders and brokers would create unnecessary cognitive load for people whose goal was simply to complete a trade process.</p>
+      <h4>What made it hard</h4>
+      <p>Users could also operate in different contexts and have several applications underway at once. The interface needed to answer more than “Which page am I on?” It had to make it clear who the user was acting as, which application needed attention, what stage it had reached and whether anything was currently required from them.</p>
+      <h4>What I chose</h4>
+      <p>We kept the underlying Vanguard interaction architecture while reducing how much of it traders needed to see at once.</p>
+      <p>Global navigation was substantially collapsed, the My Items/work-queue pane appeared when relevant, the centre remained focused on the task at hand, and secondary case controls stayed contextual rather than competing permanently for attention.</p>
+      <p>The goal was not to remove the complexity of the underlying system, but to expose it only when it helped the user act.</p>
+    </div>
+    <figure class="lnsw-arch" aria-labelledby="lnsw-arch-cap">
+      <p class="lnsw-arch-label">The inherited Vanguard framework</p>
+      <div class="lnsw-arch-panes">
+        <div class="lnsw-pane lnsw-pane-nav"><strong>Navigation / identity</strong><span>Who you are and who you’re acting as</span><em>In LNSW: collapsed to a narrow rail</em></div>
+        <div class="lnsw-pane lnsw-pane-queue"><strong>Work queue</strong><span>Active, current and pended items</span><em>In LNSW: shown when relevant</em></div>
+        <div class="lnsw-pane lnsw-pane-task"><strong>Current task</strong><span>Applications, forms, documents, approvals, payments</span><em>In LNSW: always the focus</em></div>
+        <div class="lnsw-pane lnsw-pane-actions"><strong>Contextual case actions</strong><span>Done, pend, attachments, notes, history</span><em>In LNSW: only in context</em></div>
       </div>
-      <h2 class="sub">Mobile</h2>
-      <div class="mobile-screens classic">
-        <figure class="phone"><img src="lnsw/Login%20Screen%20Mobile%201.png" alt="Mobile login with inline errors" loading="lazy"></figure>
-        <figure class="phone"><img src="lnsw/Trader%20Profile%20Registration%20Mobile%20Screen%201.png" alt="Mobile trader registration" loading="lazy"></figure>
-      </div>
+      <figcaption id="lnsw-arch-cap">Vanguard’s four regions. We kept the architecture, and changed how much of it traders saw at once.</figcaption>
+    </figure>
+    <div class="story-media">
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/my%20items.png" alt="Vanguard workspace with expanded navigation, the My Items work queue and an empty task area" loading="lazy"><figcaption>The full framework: expanded navigation and the My Items work queue around an empty task area.</figcaption></figure>
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Upload%20Supporting%20Docs1.png" alt="Trader application with navigation collapsed to a rail and the upload step filling the screen" loading="lazy"><figcaption>For traders: navigation collapses to a rail, their applications sit in the queue, and the current step fills the screen.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">02</span>
+      <h2>Turning complex regulatory processes into guided workflows</h2>
+    </header>
+    <div class="story-text">
+      <h4>The problem</h4>
+      <p>A trade application was rarely a single form. Different commodities and government agencies could require different forms, supporting documents, approvals and payments. A trader could have several of these processes running at the same time.</p>
+      <h4>What made it hard</h4>
+      <p>Some steps belonged to the trader while others depended on government officials. The underlying system needed to represent the full government workflow, but traders did not need to understand that machinery.</p>
+      <p>For them, the experience needed to answer three much simpler questions:</p>
+      <ul class="lnsw-questions"><li>Where am I?</li><li>What happens next?</li><li>Is there anything I need to do?</li></ul>
+      <h4>What I chose</h4>
+      <p>I wasn’t responsible for defining the regulatory processes themselves. My responsibility was making those processes understandable to the people who had to use them. I worked with business analysts to translate detailed process specifications into a consistent application model.</p>
+      <p>On the administrative side, processes could be assembled from workflows, forms, supporting-document requirements and agency rules. On the trader side, that complexity became a guided application with clear stages and visible progress.</p>
+      <p>The same underlying platform could therefore support different regulatory processes without making each process feel like a completely different product.</p>
+    </div>
+    <div class="story-media">
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Process%20Creator%20Step%204%20-%20Select%20Forms%20Multiple%20Selection.png" alt="Process Creator, step 4 of 7: selecting the forms a process requires" loading="lazy"><figcaption>The complexity the platform had to model: an administrator assembling a process step by step, from commodity and workflow type to forms, supporting documents and approval.</figcaption></figure>
+      <p class="lnsw-divider" aria-hidden="true">↓</p>
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/trader%20application%20step%202%2002.png" alt="Trader application with a labelled stepper from selecting a commodity code to the CLP being issued" loading="lazy"><figcaption>What the trader needed to see: one guided application with named stages, from selecting a commodity code to the CLP being issued.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap story">
+    <header class="story-head">
+      <span class="story-no">03</span>
+      <h2>Making handoffs and waiting states understandable</h2>
+    </header>
+    <div class="story-text">
+      <h4>The problem</h4>
+      <p>Applications frequently moved between traders and government officials. A user might submit information and then be unable to continue until somebody else reviewed documents, approved a step or confirmed a payment.</p>
+      <h4>What made it hard</h4>
+      <p>Without clear states, it was easy for a trader to wonder whether an application had failed, whether they still needed to do something, or whether the government was now responsible for the next step.</p>
+      <p>Documents also had several possible states: required, uploaded, provided elsewhere, previously processed or under review. Reviews could lead to approval, rejection or suspension, while some payments required proof and subsequent verification.</p>
+      <h4>What I chose</h4>
+      <p>I used explicit stages, state labels and conditional actions to make responsibility visible.</p>
+      <p>Instead of exposing every possible control, the interface showed the actions relevant to the current state. For example, rejecting an application introduced a reason field, while documents could clearly indicate whether they still needed to be uploaded or had already been provided.</p>
+      <p>The aim was to make the application feel continuous even when responsibility moved between different people.</p>
+    </div>
+    <div class="story-media">
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Upload%20Supporting%20Docs4.png" alt="Supporting documents with a count of uploaded documents and one marked as already provided" loading="lazy"><figcaption>Document states: each requirement shows whether it still needs uploading or has already been provided.</figcaption></figure>
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Review%20Application5.png" alt="Official reviewing an application with the outcome set to Rejected and a reasons field shown" loading="lazy"><figcaption>An official’s review: choosing Reject reveals a field for the reason.</figcaption></figure>
+    </div>
+    <div class="story-media lnsw-handoff">
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Make%20Payment2.png" alt="Trader choosing manual payment and uploading proof of payment" loading="lazy"><figcaption>1. The trader pays and uploads proof of payment.</figcaption></figure>
+      <figure class="browser"><div class="browser-bar"><span></span><span></span><span></span></div><img src="lnsw/Payment%20Confirmation3.png" alt="Official matching the proof of payment to a transaction before issuing the CLP" loading="lazy"><figcaption>2. An official matches it to a transaction, and the CLP can be issued.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap story other-work">
+    <h2 class="sub">Other work across LNSW</h2>
+    <div class="gallery two">
+      <figure><img src="lnsw/register-trader-web.jpg" alt="Registration screen with options for trader, broker, organisation and information consumer" loading="lazy"><figcaption>Multi-role registration: supporting different registration types for traders, brokers, organisations and information consumers.</figcaption></figure>
+      <figure><img src="lnsw/broker%20Dashboard2.png" alt="Broker dashboard transacting on behalf of FarmVision, with a menu to switch to another trading context" loading="lazy"><figcaption>Profiles and representation: managing identity, documentation and representation so users could operate in different trading contexts.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap story lnsw-outcome">
+    <h2 class="sub">Designing for complexity without showing all of it</h2>
+    <div class="story-text">
+      <p>The National Single Window launched and remains publicly accessible today, with core visual and interaction patterns from this work still visible in the live service.</p>
+      <p>The project reinforced something that has shaped how I approach complex products ever since: simplifying a system does not necessarily mean removing its complexity. Often the more important design decision is deciding when, where and to whom that complexity needs to be visible.</p>
+      <p class="lnsw-links"><a class="site-link" href="https://www.lnsw.gov.ls/" target="_blank" rel="noopener">Live service ↗</a> <a class="site-link" href="https://www.lnsw.gov.ls/public/register" target="_blank" rel="noopener">Registration ↗</a></p>
+    </div>
   </section>
 
   <nav class="wrap project-nav" aria-label="More projects">
