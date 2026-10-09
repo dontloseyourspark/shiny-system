@@ -289,6 +289,25 @@ figure.wide { margin-top: 28px; }
 .fus-ai { display: grid; grid-template-columns: 1fr 1.6fr; gap: 28px; align-items: start; margin-top: 36px; max-width: 960px; }
 .fus-ai img { width: 100%; height: auto; border-radius: 12px; border: 1px solid #262626; }
 
+/* Soldibank case study (namespaced sb-) */
+.sb-label { margin: 0 0 10px; font-family: "Outfit", sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.sb-hero { display: grid; grid-template-columns: 260px 1fr; gap: 32px; align-items: end; }
+.sb-hero figure, .sb-pair figure, .sb-phones figure { margin: 0; }
+.sb-hero-phone img, .sb-phones img, .sb-pair img { width: 100%; height: auto; border-radius: 18px; border: 1px solid #262626; }
+.sb-audiences { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; max-width: 900px; }
+.sb-audiences > div { display: flex; flex-direction: column; gap: 4px; padding: 20px; border: 1px solid #262626; border-radius: 12px; background: var(--surface); color: var(--muted); font-size: 15px; }
+.sb-audiences strong { font-family: "Outfit", sans-serif; font-size: 20px; font-weight: 600; color: var(--text); }
+.sb-pairs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; margin-top: 40px; }
+.sb-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.sb-pair-cap { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--muted); }
+.sb-pair figcaption, .sb-phones figcaption { margin-top: 8px; font-size: 13px; color: var(--muted); }
+.sb-sub { margin: 56px 0 20px; font-size: 22px; font-weight: 600; }
+.sb-phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 760px; }
+.sb-phones.two { grid-template-columns: repeat(2, 1fr); max-width: 520px; }
+.sb-phones.one { grid-template-columns: 1fr; max-width: 250px; }
+.sb-step { margin-top: 48px; }
+.sb-note { font-size: 14px !important; }
+
 /* Case study pages */
 .case-study { padding-bottom: 80px; }
 .case-study .goal { max-width: 860px; font-family: "Outfit", sans-serif; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.35; }
@@ -396,6 +415,10 @@ figure.wide { margin-top: 28px; }
   .mobile-screens, .mobile-screens.four { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .desktop-screens.two { grid-template-columns: 1fr; }
   .story { padding-top: 56px; padding-bottom: 56px; }
+  .sb-hero { grid-template-columns: 1fr; }
+  .sb-hero-phone { max-width: 260px; }
+  .sb-audiences, .sb-pairs { grid-template-columns: 1fr; }
+  .sb-phones, .sb-phones.two, .sb-phones.one { grid-template-columns: 1fr; max-width: 280px; margin: 0 auto; }
   .fus-hero { grid-template-columns: repeat(3, 1fr); gap: 10px; }
   .fus-hero img { border-radius: 12px; }
   .fus-steps { grid-template-columns: 1fr 1fr; }
